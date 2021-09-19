@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>VIP Member - Add Member Form</title>
+
+<meta charset="utf-8" />
+<meta name="description" content="Lab 11 - Step 2" />
+<meta name="keywords" content="PHP, File, input, output" />
+<link rel="stylesheet" href="lab11.css" type="text/css" />
+<!-- Description: Form Input for VIP Member -->
+<!-- Author: <your name> -->
+<!-- Date: <last date updated> -->
+<!-- Validated: OK <date checked> || <what still needs to be fixed> -->
+
+</head>
+<body>
+	<h1>VIP Add Member Form</h1>
+	<form method="post" action="member_add.php">
+	<fieldset><legend>New Member Details</legend>
+		<p>	<label for="firstname">First Name: </label>
+			<input type="text" name="firstname" id="firstname" /></p>
+		<p>	<label for="lastname">Last Name: </label>
+			<input type="text" name="lastname" id="lastname" /></p>
+		<fieldset id="gender"><legend >Gender:</legend>
+			<input type="radio" name="sex" value="M" id="male" checked="checked" />
+			<label for="male"> M </label>
+			<input type="radio" name="sex" value="F" id="female"  />
+			<label for="female"> F </label>
+		</fieldset>
+		<p>	<label for="email">Email: </label>
+			<input type="text" name="email" id="email" /></p>
+		<p>	<label for="phone">Phone: </label>
+			<input type="text" name="phone" id="phone" /></p>
+		<p>	<input type="submit" value="Add New Member" /></p>
+	</fieldset>
+	</form>
+</body>
+</html>

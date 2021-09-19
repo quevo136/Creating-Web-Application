@@ -1,0 +1,117 @@
+@media screen and (max-width: 31.25em){
+
+	nav ul {
+		width: 100%;
+		text-align: center;		
+	}
+
+	.box{
+		max-width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+		float: none;
+	}
+
+	
+.portral_img img {
+    width: 50%; 
+	border-radius: 50%;
+	float: left ;
+	justify-content: left;
+	margin-left:  5% ;
+	margin-top: 800px;
+    padding:3px;
+    border:8px solid white;
+    background-color: #F54D3D ;
+    position: fixed;
+  
+    
+}
+
+.defination_list{
+	float: right;
+	justify-content: right;
+	margin-right: 160px;
+	font-size: 18px;
+	font-family: 'roboto';
+}
+
+.timetable{
+	border-collapse: collapse;
+	font-size: 1em;
+	max-width: 60%;
+	min-width: 300px;
+	text-align: center;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}	
+
+
+.box{	
+	border-collapse: collapse;
+	font-size: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+	
+	.course_select{
+		width: 100%;
+	}
+	
+	.bussiness_and_finace {
+		width: 25%;
+	}
+
+	.marketing{
+		width: 25%;
+	}
+	
+	.CS {
+		width: 25%;
+	}
+
+	.design {
+		width: 25%;
+	}
+
+
+	.course-schedule a{
+		float: none;
+		width: 100%;
+
+	}	
+	.course-schedule, .course-schedule tr, .course-schedule td{
+		/*display: block;*/
+		position: absolute;
+		width:90%;
+		float: none;
+	}
+
+	
+    .course-schedule tr{
+    	margin-bottom: 15em;}
+
+    .course-schedule td{
+    	/*text-align: right;
+    	/*padding-left: 10%;*/
+    	position: relative;
+    }	
+
+    .course-schedule td::before{
+    	content: attr(data-label);
+    	/*position: absolute;
+    	left: 0;
+    	width: 50%;
+    	padding-left: 15px;*/
+    	font-size: 15px;
+    	font-weight: bold;
+    	/*text-align: left;*/
+    }
+
+    .container{
+    	width: 
+    }
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Card</title>
+    <link href = "style.css" rel="stylesheet"/>
+    <script src="enhancement.js" async></script>
+    <script type="payment.js"></script>
+    
+
+</head>
+<body>
+
+<h2>Responsive Checkout Form</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container_total">
+            <form id="validation" method = "post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+                <div class="row">
+                   
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <select name="fname" tabindex="21" id="fname" style="margin-left: 10px;" required="required">
+                            <option value="">Please Select</option>
+                            <option value="fname">AmericanExpress</option>
+                            <option value="fname">Visa</option>
+                            <option value="fname">MasterCard</option>
+
+                        </select>
+                
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text_payment" id="ccnum" name="ccnum"  placeholder="Card Number" required/>
+                       
+                        
+
+                        <label for="cname">Name on Card</label>
+                        <input type="text_payment" id="cname" name="cardname" maxlength="40" placeholder="Name" pattern="^[a-zA-Z ]+$" required/>
+                        
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text_payment" id="expmonth" name="expmonth" maxlength="2" placeholder="December" required/>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text_payment" id="expyear" name="expyear" placeholder="2021" required/>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text_payment" id="cvv" name="cvv" placeholder="352"required/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+             
+
+        
+        
+         <p>Total Cost: $<span  id="confirm_cost"></span></p>
+         <input type="hidden" name="cost" id="cost"/>
+                
+                </section>
+           
+            
+   
+                <input type="submit" value="Continue to checkout" class="buton">
+                <button type="reset" id="reset"><a href = " index.html">CANCEL</a></button>
+            </form>
+        </div>
+    </div>
+
+   
+            
+
+    
+</div>
+

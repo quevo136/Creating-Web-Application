@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DeskHelp.html</title>
+</head>
+<body>
+
+	<figure>
+		<img src="lab02-2/logo.png" alt="logo">
+	</figure>
+
+	<h1>
+		CWA Help Desk Appointment
+	</h1>
+
+	<p>
+		The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday<br>
+		Check Blackboard for when CWA tutors will be there
+	</p>
+
+	<form>
+		<fieldset>
+			<legend>Student details</legend>
+			<p><label for="StudentID"> Student ID</label>
+				<input type="text" minlength = "7" maxlength ="10" required="required">
+				
+			</p>
+
+			<p><label for="GivenName"> Given Name</label>
+				<input type="text" name = "Given" id = "givenname" maxlength="15" size="15" required="required">
+
+				<label for="FamilyName"> Family Name</label>
+				<input type="text" name = "Family" id="familyname" maxlength="15" size ="15" required="required">
+		
+			</p>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Unit</legend>
+			<p><label for="COS10011">COS10011</label> 
+				<input type="radio" id="COS10011" name="Unit" value="COS10011"/>
+			
+			<label for="COS60004">COS0004</label> 
+				<input type="radio" id="COS60004" name="Unit" value="COS60004"/>
+
+			<label for="COS60007">COS60007</label> 
+				<input type="radio" id="COS60007" name="Unit" value="COS60007"/>
+			</p>
+
+			<p><label for="tutors">Your Tutor</label> 
+			<select name="tutors" id="tutors">
+				<option value="">Please Select</option>
+				<option value="qiang">Qiang</option>
+				<option value="Guangming">Guangming</option>			
+				<option value="bo">Bo</option>
+				<option value="grace">Grace</option>
+				
+			</select>
+		</p>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Issue</legend>
+			
+			<p><label for="html">HTML</label> 
+				<input type="checkbox" id="html" name="category[]" value="best" checked="checked"/>
+			
+			<label for="css">CSS</label> 
+				<input type="checkbox" id="css" name="category[]" value="best"/>
+			
+			<label for="javascript">JavaScript</label> 
+				<input type="checkbox" id="javascript" name="category[]" value="best" />
+			
+			<label for="php">PHP</label> 
+				<input type="checkbox" id="php" name="category[]" value="best" />
+
+			<label for="mysql">MySQL</label> 
+				<input type="checkbox" id="mysql" name="category[]" value="best" />
+			</p>
+			<label for="doi">Discription of Issue</label>
+			<br>
+			<textarea id="doi" name="doi" rows="4" cols="40" placeholder="Write description of your problem here..."></textarea>
+
+		</fieldset>
+
+	
+		<fieldset>
+			<legend>Prferred Date/Time</legend>
+			<p><label for="date">Date</label> 
+			<input type="text" name= "date" id="date" placeholder="dd/mm/yyyy" maxlength="10" size="10"/></p>
+			<p><label for="time">Time</label> 
+			<input type="text" name= "time" id="time" placeholder="00:00" maxlength="10" size="10"/></p>
+		</fieldset>
+
+
+		<input type= "submit" value="Book"/>
+	    <input type= "reset" value="Reset Form"/>
+
+
+	</form>
+
+</body>
+</html>

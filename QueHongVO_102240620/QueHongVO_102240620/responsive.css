@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px){
+
+	nav ul li{
+		width: 25%;}
+
+	#section1 {
+		width: 43%;
+	}
+
+	#section2 {
+		width: 43%;
+	}	
+
+	#section3 {
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+
+	#section3 img {
+		width: 30%;
+		float: left;
+		margin: .5em 1em 1em 0;
+	}
+
+	article {
+		min-width: 600px;
+	}
+
+
+}

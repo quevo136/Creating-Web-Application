@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Creating Web Applications Lab 10" />
+<meta name="keywords" content = "PHP, MySql" />
+<title>Add Car Form</title>
+</head>
+<body>
+    <form id="addcar" method="post" action="cars_add.php">
+        <fieldset>
+        <legend>New Car Details</legend>
+        <p><label for="make">Car Make: </label>
+        <input type="text" id="make" name="make" /></p>
+        <p><label for="model">Car Model: </label>
+        <input type="text" id="model" name="model" /></p>
+        <p><label for="price">Price: </label>
+        <input type="number" id="price" name="price" /></p>
+        <p><label for="yom">Year of Manufacture: </label>
+        <input type="number" id="yom" name="yom" /></p>
+        <p><input type="submit" value="Add New Car" /></p>
+    </fieldset>
+    </form>
+    </body>
+    </html>

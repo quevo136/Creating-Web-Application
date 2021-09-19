@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product enquiry page</title>
+	<link href = "style.css" rel="stylesheet"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dosis&family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device=width, initial-scale=1.0, maximum-scale=1"/>
+    <link href = "responsive.css" rel="stylesheet" media= "screen and (max-width:1024px)"/>
+    <script src="main.js" async></script>
+</head>
+<body>
+	<h1>UJIME</h1>
+	<header>
+	    <nav>
+	    	<ul>
+		    <li><a href="index.html">Home</a></li>
+		    <li><a href="enquire.html">Product Enquiry</a></li>
+		    <li><a href="product.html">Product Range </a></li>
+		    <li><a href="about2.html">About Me</a></li>
+		    </ul>
+	    </nav>
+        
+	</header>
+	<div class="bg_img">
+	<form class="box">
+		<h2>Product Enquiry Form</h2>
+		<p><label for="First_name"> First Name*:</label>
+		    <input type="text" name="First_name" id="First_name" maxlength="25" required= "required" />
+	    </p>
+
+		<p><label for="Last_name"> Last Name*:</label>
+		    <input type="text" name="Last_name" id="Last_name" maxlength="25" required="required"/>
+	    </p>
+
+	    <p><label for="email">Email*:</label> 
+            <input type="email" name= "email" id="email" required="required"/>
+	    </p>
+
+
+
+	    <p><label for="phone_num">Phone Number*:</label> 
+            <input type="text" name= "phone_num" id="phone_num" placeholder="Phone Number" required="required"/>
+	    </p>
+
+
+	    <fieldset>
+
+	    <legend class="Address">Address* </legend>
+	    
+	    <p><label for ="Street_Address"> Street Address* </label>
+		        <input type="text" name="Street" id="Street_Address" maxlength="40" required="required"/></p>
+
+		<p><label for = "Suburb/Town"> Suburb/Town* </label>
+		        <input type="text" name="Suburb" id="Suburb/Town" maxlength="20" required="required"/>
+	    </p>
+
+	    <p><label for="state">State*</label> 
+			<select name="State" id="state">
+				<option value="VIC">VIC</option>			
+				<option value="NSW">NSW</option>
+				<option value="QLD">QLD</option>
+				<option value="NT">NT</option>
+				<option value="WA">WA</option>
+				<option value="SA">SA</option>
+				<option value="TAS">TAS</option>
+				<option value="ACT">ACT</option>
+			</select>
+		</p>
+
+		<p><label for="postcode">Postcode* </label> 
+            <input type="tel" name= "postcode" id="postcode" maxlength="4" required="required"/>
+	    </p>
+	    </fieldset>
+
+
+	    <fieldset>    
+	    	<legend>Preferred Contact*</legend>
+			<p><label for="email">Email</label> 
+				<input type="radio" id="mail" name="pref_contact" value="email"/>
+			
+			<label for="phone">Phone*</label> 
+				<input type="radio" id="phone" name="pref_contact" value="phone"/>
+			
+			<label for="post">Post*</label> 
+				<input type="radio" id="post" name="pref_contact" value="post"/>
+			</p>
+		</fieldset>
+
+		<label for="doi">Comments</label>
+			<br>
+			<textarea id="doi" name="doi" rows="4" cols="40" placeholder="Write your aspect you are interesting in"></textarea>
+		<br>
+
+		<!--<p><label for="courses">Courses List </label> 
+			<select name="course" id="courses">
+				<option value="">Please Select</option>
+				<option value="Business_and_finance">Business and Finance </option>			
+				<option value="Design">Design</option>
+				<option value="Computer_science">Computer Science </option>
+				<option value="Marketing">Marketing</option>
+				
+				
+			</select>*/
+		</p>-->
+
+		<div class = "form-header" >
+			<h2 id = "course_list "> Course List</h2>
+			
+		</div>
+
+		<div class="form-input-wide">
+			<p>ENTER THE QUANTIY NEXT TO THE NUMBER YOU WISH TO ORDER </p>
+		</div>
+
+		<div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Design</span>
+                    
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$119.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Computer Science </span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$56.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Marketing </span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$69.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Bussiness and Finance</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$68.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+		
+
+		<section class="container2 content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">TOTAL PRICE</span>
+             
+            </div>
+            <div class="cart-items">
+            </div>
+
+        
+
+
+
+
+
+
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+
+
+
+		<!--<div class="course_option">
+			<ul class="Course_and_price">
+				<li class="form-line form-line-column column-1">
+					<label class="form-label-left" for="Business_and_finance"> Business and Finance - $200 </label>
+		            <input type="text" name="Business_and_Finance" id="Business_and_Finance" size = 5 >
+				</li>
+
+			
+				<li class="form-line form-line-column column-1">
+					<label class="form-label-left" for="Computer_science"> Computer science - $500 </label>
+		            <input type="text" name="Computer_science" id="Computer_science" size = 5 >
+				</li>
+				<li class="form-line form-line-column column-1">
+					<label class="form-label-left" for="Marketing"> Marketing - $500 </label>
+		            <input type="text" name="Marketing" id="Marketing" size = 5 >
+				</li>
+
+				<li class="form-line form-line-column column-1">
+					<label class="form-label-left" for="Design">Design - $500 </label>
+		            <input type="text" name="Design" id="Design" size = 5 >
+				</li>-->
+
+
+				
+
+		        <!--<div class="cart-total">
+                <strong class="cart-total-title">Total Unit Cost</strong>
+                <span class="cart-total-price">$0</span>
+                </div>
+
+
+
+		        <li class="form-line form-line-column column-2">
+					<label class="form-label-left" for=""> Total Unit Cost</label>
+		            <input type="text" size=8 class="form-textox" data-defaultvalue= "0">
+		        </li>
+
+		        <li class="form-line form-line-column column-2">
+					<label class="form-label-left" for=""> Total Unit Cost</label>
+		            <input type="text" size=8 class="form-textox" data-defaultvalue= "0">
+		        </li>
+
+				<li class="form-line form-line-column column-2">
+					<label class="form-label-left" for=""> Total Unit Cost</label>
+		            <input type="text" size=8 class="form-textox" data-defaultvalue= "0">
+				</li>
+
+
+				
+			</ul>
+			
+		</div>
+
+
+		<div class="form-header-group cost-total">
+			<div class="form-header-group header-defaulft">
+				<h2 class="form-header">Total Cost</h2>
+			</div>
+
+			<div class="form-line">
+				<label class="total-cost">Total Cost :</label>
+				<div>
+					<input type="text" data-defaulvalue = "0" size="20">
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+	</form>
+	</div>
+
+</body>
+</html>

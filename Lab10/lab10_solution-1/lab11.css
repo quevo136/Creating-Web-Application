@@ -1,0 +1,8 @@
+/* A simple style sheet to improve user interface in Lab11 */
+	body {font-family: Arial, sans-serif;}
+    legend {font-size: larger; font-weight:bold;}
+	fieldset  {min-width: 300px; max-width: 500px}
+	#gender legend {font-size: medium; font-weight:bold;}
+	.ok {color:green;}
+	.notok   {color:red;}
+	.wrong	{color:red; font-weight:bold;}

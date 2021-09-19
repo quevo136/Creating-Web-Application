@@ -1,0 +1,688 @@
+*{
+	box-sizing: border-box;
+	
+}
+
+h1{
+	margin-left: 1em;
+	color:#F0A160; 
+	font-family: 'roboto', sans-serif;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+nav{
+	background-color: #F0A160;
+	font-size: 15px;
+	font-family: Arial;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}	
+
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li{
+	padding: 15px 20px;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+}	
+
+nav ul li a:hover{
+	color: brown;
+	transition: 0.6s;
+}
+
+
+.bg_img{
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+footer{
+	text-align: center;
+}
+/*Enquire.html*/
+.box {
+	width: 850px;
+	height:1800px;
+	/*position: absolute;*/
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 20px 40px;
+	/*margin-left: 18px;*/
+	color: white; 
+	left: 26%;
+	top: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F0CCB0 ;
+	box-shadow: 0 0 20px rgb(0,0,0,0.15);
+
+}
+
+
+
+.box textarea{
+	background-color: white;
+	text-decoration-color: white;
+}
+.box h2{
+	text-align: center;
+	/*padding-left: 200px;
+	margin-bottom: 25px;*/
+}
+
+.box input{
+	border: 2px solid white;
+	background:white;
+	font-size: 18px;
+	margin: auto;
+	/*margin:  0 10px;*/
+	border-radius: 8px;
+
+}
+
+
+.btn {
+	margin-left: 5px;
+}
+.box input[type = "submit"]{
+	display: block;
+	border: 2px solid brown; 
+	background-color: white;
+	text-decoration-color: red;
+}	
+.box input[type = "submit"]:hover{
+	background-color: brown;
+	border: 1px solid brown;
+	text-decoration-color: white;
+	color: white;
+
+} 
+
+.reset:hover {
+	background-color: brown;
+	border: 1px solid brown;
+	color: white;
+}
+
+.shop-item-button:hover{
+	background-color: brown;
+	border: 1px solid brown;
+	color: white;
+}
+
+.btn-danger:hover{
+	background-color: brown;
+	border: 1px solid brown;
+	color: white;
+}
+
+.cart-quantity-input{
+	width: 80%;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+
+
+}
+
+.cart-item {
+    width: 65%;
+    text-align: left;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+.cart-quantity {
+    width: 35%;
+    text-align: center;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+
+.form-line {
+    padding: 12px 5px;
+    position: relative;
+   
+}
+
+
+.form-label-left{
+	width: 140px;
+	height: 40px;
+	/*float: left*/
+	justify-content: center;
+    display: inline-block;
+    text-align: left;
+    padding: 3px;
+    white-space: normal;
+    word-break: break-word;
+
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 15px;
+
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    text-align: left;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase{
+	
+    padding: 12px;
+    width: 28%;
+    margin-right: 290px;
+    margin-left: 280px;
+    font-size: 27px;
+    box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+    
+}
+
+
+	
+
+/*.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}*/
+
+
+/*.course_option{
+	align-items: center;
+}
+
+.total-cost{
+	display: flex;
+	justify-content: flex;
+	border-top: 3px solid #ff523b;
+	padding-top: 10px;
+	text-align: right;
+	font-size: 30px;
+}*/
+
+
+/*Product.html */
+body{
+	justify-content: center;
+	width: 100%
+}
+
+image{
+  display: block;
+  margin-left: 10em;
+  margin-right: 10em;
+  width: 50%;
+}
+
+
+
+ol li{
+	font-size: 14px;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}	
+
+
+.courses-schedule{
+	border-collapse: collapse;
+	min-width: 300px;
+	transform: translate(45%, 10%);
+	font-size: 1em;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+}
+
+
+
+.courses-schedule th{
+	background-color:#B97D60;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 6px 8px;
+	border-radius: 3px;
+
+}
+ 
+.courses-schedule td{
+	padding: 10px 18px;
+	 
+}
+
+.courses-schedule tr{
+	border-bottom: 1px solid #dddddd;
+}
+
+.courses-schedule tr:nth-of-type(even){
+	background-color: #f3f3f3;
+}
+
+ h2 {
+	color: brown;
+	padding-left: 4%;
+	font-family: 'Roboto', serif;
+	
+
+}
+
+.course_select {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: justify; 
+  margin-top: -25px;
+ 
+  
+}
+
+.design,.CS,.bussiness_and_finace,.marketing {
+  float: left;
+  width: 25%;
+  padding: 8px;
+  text-align: justify; 
+  margin-top: -25px;
+
+  
+}
+.portfolio-images{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.portfolio-item-wrapper{
+	position: relative;
+}
+.desing_img .computer_science_img .business_img .market_img{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.subtitle{
+	position: absolute;
+	top: 0;
+	display: flex;
+	width: max-content;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-weight: 800;
+	font-size: 40px;
+	color: transparent;
+}
+
+.subtitle:hover { 
+	font-weight: 800;
+	font-size: 40px;
+	color: orange ;
+	transition: 2s;
+	text-align: center;
+	
+}
+
+
+.course_select p {
+	font-family: 'lato', serif;
+	
+}
+
+
+.course_select h3 a{
+	text-decoration: none;
+	color: black;
+	display: inline-flex;
+	
+	font-family: 'Arvo', serif;
+}	
+
+.course_select h3 a:hover{
+	background-color: #F0CCB0;
+	transition: 0.5s;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+
+.suporter li a:hover{
+	background-color: #F0CCB0;
+	transition: 0.5s;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+.course_select a,
+.suporter li a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Lato', serif;
+}
+
+.suporter li{
+
+	padding-left: 2% ; 
+	padding-bottom: -5%;
+}
+
+.location {
+	background-color: transparent;
+	font-size: 15px;
+	font-family: Arial;
+	display: flex;
+	column-count: 3;
+	height: -5px;
+	justify-content: center;
+	column-gap: 60px;
+}
+
+.location h4{
+	list-style: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.location p{
+	list-style: none;
+	justify-content: center;
+	text-transform: normal;
+	font-weight: normal;
+}
+
+
+
+/*Aboutme2.html*/
+.container2{
+	background-image: url("images/bg3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 50px;
+	height: 380px;
+	border-color: white;
+
+}
+
+.WAI{
+	position: absolute;
+	left: 20%;
+	top:40%;
+	font-size: 100px;
+	color: white;
+}
+
+.content {
+	float: flex;
+	width: 60%;
+	padding-top: 250px;
+}
+
+.portral_img img {
+
+    width: 23%; 
+	border-radius: 50%;
+	float: right ;
+	justify-content: right;
+	margin-left:  70% ;
+	margin-top: -40px;
+    padding:3px;
+    border:8px solid white;
+    background-color: #F54D3D ;
+    display: block;
+    position: absolute;
+    
+}
+
+.defination_list{
+	float: right;
+	justify-content: left;
+	padding-top: 80px;
+	padding-left: 10px;
+	margin-right: 30px;
+	font-size: 18px;
+	font-family: 'roboto';
+}
+
+.timetable{
+	border-collapse: collapse;
+	font-size: 1em;
+	min-width: 300px;
+	text-align: center;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.timetable td{
+	padding: 10px 18px;
+}
+
+
+.timetable td{
+	padding: 10px 18px;
+}
+
+.timetable caption{
+	padding: 5px 4px;
+	text-decoration-color:#A82810;
+
+}
+
+.timetable th{
+	background-color:#B97D60;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 6px 8px;
+	border-radius: 3px;
+}
+
+.timetable tr{
+	border-bottom: 1px solid #dddddd;
+	column-rule: 1px solid black;
+}
+
+.maps {
+	justify-content: center;
+}
+
+
+/*payment*/
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+
+
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+    padding: 0 16px;
+}
+
+.container_total {
+    background-color: #FFFFFF;
+    width: 500px;
+    margin-right: auto;
+	margin-left: auto;
+    padding: 3px 18px 13px 18px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    box-shadow: 0 0 2rem 0 rgba(168, 180, 194, 0.37);
+}
+
+input[type=text_payment] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid rgb(130, 26, 26);
+    border-radius: 1px;
+}
+
+label {
+    margin-bottom: 15px;
+
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.buton {
+    background-color: #01BAEF;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+
+}
+
+.buton:hover {
+    background-color: #0CBABA;
+}
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns 
+    stack on top of each other instead of next to each other (also change the direction 
+    - make the "cart" column go on top) 
+*/
+@media (max-width: 100px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}

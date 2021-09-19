@@ -1,0 +1,9 @@
+SELECT *
+FROM `vipmembers`
+WHERE member_id =1
+OR member_id LIKE '%'
+
+SELECT *
+FROM `vipmembers`
+WHERE member_id =1
+OR 1 =1# and lname=anything

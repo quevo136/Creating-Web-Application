@@ -1,0 +1,113 @@
+"use strict"
+
+function init(){
+	var regForm = document.getElementById("regform");// get ref to the HTML element
+    regForm.onsubmit = validate; 
+}
+
+function validate(){
+	var errMsg = "";
+	var result = true;
+
+	var firstname = document.getElementById("firstname").value;
+
+	if (!firstname.match(/^[a-zA-Z]+$/)){
+		errMsg = errMsg + "Your first name must only contain alpha characters\n"
+		result = false;
+	}
+
+	if (!lastname.match(/^[a-zA-Z]+$/)){
+		errMsg = errMsg + "Your last name must only contain alpha characters\n"
+		result = false;
+	}
+
+	if (isNaN(age)){
+		errMsg = errMsg + "Your age must be a number\n"
+		result = false;
+	}
+	else if ( age< 18){
+		errMsg = errMsg + "Your age must be 18 or older\n";
+		result = false;
+	} 
+	else if (age >= 10000){
+		errMsg = errMsg + "Am i a fool?"
+		result = false;
+	}
+
+	else{
+		var tempMsg = checkSpeciesAge(age);
+		if (tempMsg != ""){
+			errMsg = errMsg +tempMsg;
+			result = false; 
+		}
+	}
+
+	if(document.getElementById("food").value == "none"){
+		errMsg = errMsg + "You must select a food preference";
+		result = false;
+	}
+
+    var is1day = document.getElementById("1day").checked;
+    var is4day = document.getElementById("4day").checked;
+    var is10day = document.getElementById("10day").checked;
+
+
+    if (!(is1day || is4day || is10day)){
+    	errMsg += "Please select at least one trip \n"
+    	result = false;
+
+    }
+
+	if (errMsg != ""){
+		alert(errMsg);
+	}
+
+
+	return result;
+}
+
+
+function getSpecies(){
+
+	var speciesName = "Unknown";
+    
+	var speciesArray = document.getElementById("species").getElementByTagName("input");
+
+	for (var i =0; i<speciesArray.length; i++){
+	   	if (speciesArray[i].checked){
+	   		speciesName = speciesArray[i].value;
+	   	}
+	}
+
+	return speciesName;    
+
+} 
+
+function checkSpeciesAge(age){
+	var errMsg ="";
+	var species = getSpecies();
+	switch(species){
+		case "Human":
+            if (age > 120) {
+             	errMsg = "You cannot be a Human and over 120.\n"
+
+            }
+            break;
+        case "Dwarf":
+        case "Hobbit":
+            if (age >150) {
+            	errMsg = "You cannot be a " + species + " and over 150.\n";
+
+            }
+            break;
+        case "Elf":
+            break;
+        default:
+            errMsg = "We dont allow your kind in our tours.\n"
+
+
+	}
+	return errMsg;
+}
+
+window.onload = init;
